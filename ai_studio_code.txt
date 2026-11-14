@@ -1,0 +1,52 @@
+# MyINSafAI
+
+A full-stack AI chat web application built with HTML/CSS/JavaScript and a Python Flask backend powered by the Google GenAI SDK.
+
+## Project Structure
+
+```text
+MyINSafAI/
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+├── backend/
+│   ├── app.py
+│   ├── ai.py
+│   └── requirements.txt
+├── .env
+└── README.md
+```
+
+## Setup & Run
+
+1. **Create and activate a virtual environment** (from `MyINSafAI/`):
+   ```bash
+   python -m venv venv
+   # Windows:
+   venv\Scripts\activate
+   # macOS/Linux:
+   source venv/bin/activate
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r backend/requirements.txt
+   ```
+
+3. **Configure environment variables:**
+   Add your Gemini API key inside `.env`:
+   ```env
+   GEMINI_API_KEY=your_actual_api_key
+   GEMINI_MODEL=gemini-3.5-flash
+   PORT=5000
+   ```
+   *(Make sure `.env` is added to `.gitignore` before pushing to GitHub.)*
+
+4. **Start the server:**
+   ```bash
+   python backend/app.py
+   ```
+
+5. **Open the app:**
+   Visit `http://127.0.0.1:5000` in your browser.
